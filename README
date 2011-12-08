@@ -1,1 +1,3 @@
-This is a web app that randomizes a list of values.  I am working on this as an exercise php and  application development.
+This is a web app that randomizes a list of values.  I am working on this as an exercise php and  application development. 
+
+Right now I am working on allowing the user to specify the number of things they want to sort.
