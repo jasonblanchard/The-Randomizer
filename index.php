@@ -30,16 +30,16 @@ else {
 		?>
 		<form action='shuffle.php' method='post'>
 		<?php echo $thingnumber; ?>: <input type='text' name='thing[]' /><br />
-		<input type='submit' value='Randomize!' /><br />
-		</form>
 		<?php $loop += 1;
 		$thingnumber += 1; 
 		}
 	while ($loop <= $amount);
-
-	
+	?>
+	<input type='submit' value='Randomize!' /><br />
+	</form>
+<?php
+}	
 ?>
-
 <!--
 
 	<form action="shuffle.php" method="post">

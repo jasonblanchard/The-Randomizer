@@ -31,7 +31,7 @@ if (isset($_POST['thing'])) {
 <input type="hidden" name="dummy" />
 <input type="submit" value="Re-randomize" />
 <br />
-<a href="index.html">Sort new items</a>
+<a href="index.php">Sort new items</a>
 
 </div>
 </body>
