@@ -3,6 +3,10 @@
 <body>
 
 <div id="maincontent" >
+
+<h1>The Randomizer</h1> <br  >
+<br />
+
 <?php
 
 session_start();
@@ -30,6 +34,7 @@ if (isset($_POST['thing'])) {
 <form action="shuffle.php" method="post">
 <input type="hidden" name="dummy" />
 <input type="submit" value="Re-randomize" />
+<br />
 <br />
 <a href="index.php">Sort new items</a>
 

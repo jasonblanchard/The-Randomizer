@@ -1,4 +1,14 @@
+body {
+	background-color:#F7F7F7;
+	font-family: Helvetica, sans-serif;
+}
+
+p {
+	{ text-align: center};
+}
+
 #maincontent {
+	color:#515151;
 	width: 500px;
 	align: center;
 	margin-left:auto;
@@ -6,5 +16,8 @@
 }
 
 
-	h1 { text-align:center; }
+h1 { text-align:center; }
 
+a:link {color:#8B5A00}
+a:hover{color:#8B8878}
+a:visited {color:#8B5A00}

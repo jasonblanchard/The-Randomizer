@@ -12,11 +12,12 @@
 if (! isset($_POST['amount'])) {
 
 	?>
-	
+	<p>
 	<form action="index.php" method="post">
-	How many things do you need to sort? <br /> <input type="text" name="amount" />
+	How many things do you need to randomize? (Enter a number) <br /> <input type="text" name="amount" />
 	<input type="submit" value="Submit" />
 	</form>
+	</p>	
 
 <?php
 
@@ -26,6 +27,7 @@ else {
 	$amount=$_POST['amount'];
 	$thingnumber = 1;
 	$loop = 1;
+	echo "Enter the things you want to randomize: </ br>";
 	do {
 		?>
 		<form action='shuffle.php' method='post'>
