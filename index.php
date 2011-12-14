@@ -42,19 +42,6 @@ else {
 <?php
 }	
 ?>
-<!--
-
-	<form action="shuffle.php" method="post">
-	Thing 1: <input type="text" name="thing[]" /><br />
-	Thing 2: <input type="text" name="thing[]" /><br />
-	Thing 3: <input type="text" name="thing[]" /><br />
-	Thing 4: <input type="text" name="thing[]" /><br />
-	Thing 5: <input type="text" name="thing[]" /><br />
-	<br />
-	<input type="submit" value="randomize!"/>
-			</form>
--->
-
 
 </div>
 </body>
