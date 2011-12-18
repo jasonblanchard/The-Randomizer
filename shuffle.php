@@ -15,9 +15,13 @@ function sortThings($items) {
 	$num=1;
 	shuffle($items);
 	foreach($items as $choice) {
-		echo "$num. $choice <br />";
+		echo "<table class='items'>";
+		echo "<tr>";
+		echo "<td>$num. $choice</td>";
+		echo "</tr>";
 		$num=1+$num;
 	}
+	echo "</table>";
 }
 
 if (isset($_POST['thing'])) {

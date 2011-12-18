@@ -10,14 +10,16 @@
 <?php
 
 if (! isset($_POST['amount'])) {
-
 	?>
-	<p>
+	<table class="landing">
+	<tr>
 	<form action="index.php" method="post">
-	How many things do you need to randomize? (Enter a number) <br /> <input type="text" name="amount" />
-	<input type="submit" value="Submit" />
+	<td>How many things do you need to randomize? (Enter a number) <br /><br /> <input type="text" name="amount" />
+	<input type="submit" value="Submit" /></td>
 	</form>
-	</p>	
+	</tr>
+	</table>	
+
 
 <?php
 
@@ -27,16 +29,20 @@ else {
 	$amount=$_POST['amount'];
 	$thingnumber = 1;
 	$loop = 1;
-	echo "Enter the things you want to randomize: </ br>";
+	echo "Enter the things you want to randomize: <br /><br />";
 	do {
 		?>
+		<table>
+		<tr>
 		<form action='shuffle.php' method='post'>
-		<?php echo $thingnumber; ?>: <input type='text' name='thing[]' /><br />
+		<td><?php echo $thingnumber; ?>: <input type='text' name='thing[]' /><br /></td>
+		</tr>
 		<?php $loop += 1;
 		$thingnumber += 1; 
 		}
 	while ($loop <= $amount);
 	?>
+	</table>
 	<input type='submit' value='Randomize!' /><br />
 	</form>
 <?php
