@@ -2,10 +2,15 @@
 <head><link rel="stylesheet" type="text/css" href="shuffle.css" /></head>
 <body>
 
+<div class="github">
+<br />
+Help us improve on <a href="https://github.com/jasonblanchard/The-Randomizer">github!</a>
+
+</div>
 
 
 <div class="maincontent" >
-
+<br />
 <h1>The Randomizer</h1> <br  >
 <br />
 
