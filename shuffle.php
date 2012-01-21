@@ -30,7 +30,6 @@ function sortThings($items) {
 
 ?>
 
-<div id="items">
 
 <?php
 
@@ -38,6 +37,7 @@ if (isset($_POST['thing'])) {
 	echo "<table class='items'";
 	sortThings($_POST['thing']);
 	echo "</table>";
+	
 	$_SESSION['rerandomize'] = $_POST['thing'];
 } elseif (isset($_SESSION['rerandomize'])) {	
 	echo "<table class='items'";
@@ -47,7 +47,6 @@ if (isset($_POST['thing'])) {
 
 
 ?>
-</div>
 <br />
 <form action="shuffle.php" method="post">
 <input type="hidden" name="dummy" />

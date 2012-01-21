@@ -46,7 +46,7 @@ table {
 	text-align:center;
 }
 
-table.items tbody, tr, td  {
+table.items  td  {
 	text-align:left;	
 	margin-left:auto;
 	margin-right:auto;
