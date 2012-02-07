@@ -15,12 +15,13 @@ Help us improve on <a href="https://github.com/jasonblanchard/The-Randomizer">gi
 <br />
 
 <?php
+$script = $_SERVER['SCRIPT_NAME'];
 
 if (! isset($_POST['amount'])) {
 	?>
 	<table id="landing">
 	<tr>
-	<form action="index.php" method="post">
+	<form action="<?php $script ?>" method="post">
 	<td>How many things do you need to randomize? (Enter a number) </td>
 </tr>
 <tr>
@@ -38,6 +39,11 @@ else {
 	$amount=$_POST['amount'];
 	$thingnumber = 1;
 	$loop = 1;
+
+    if ( ! ctype_digit($amount) ) {
+        echo "Go <a href='$script'>back</a> and enter a number!";
+        } else {
+
 	echo "Enter the things you want to randomize: <br /><br />";
 	?>
 	<table>
@@ -57,7 +63,9 @@ else {
 	<input type='submit' value='Randomize!' /><br />
 	</form>
 <?php
-}	
+               }
+        }
+
 ?>
 
 </div>
