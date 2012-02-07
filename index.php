@@ -4,7 +4,7 @@
 
 <div class="github">
 <br />
-Help us improve on <a href="https://github.com/jasonblanchard/The-Randomizer">github!</a>
+Help us improve on <a href="https://github.com/jasonblanchard/The-Randomizer" target="_blank">github!</a>
 
 </div>
 

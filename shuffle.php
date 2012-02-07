@@ -22,7 +22,8 @@ function sortThings($items) {
 	shuffle($items);
 	foreach($items as $choice) {
 		echo "<tr>";
-		echo "<td>$num. $choice</td>";
+        $safechoice = htmlentities($choice);
+		echo "<td>$num. $safechoice</td>";
 		echo "</tr>";
 		$num=1+$num;
 	}
